@@ -1,11 +1,11 @@
 #include "dram.h"
 
-void DRAM::write(uint32_t addr, uint32_t val)
+void DRAM::write(uint32_t addr, array<uint32_t, 16> val)
 {
     memory[addr] = val;
 }
 
-uint32_t DRAM::read(uint32_t addr)
+array<uint32_t, 16> DRAM::read(uint32_t addr)
 {
     auto it = memory.find(addr);
     if (it != memory.end())
@@ -14,6 +14,6 @@ uint32_t DRAM::read(uint32_t addr)
     }
     else
     {
-        return 0;
+        return {};
     }
 }
