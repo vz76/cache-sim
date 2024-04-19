@@ -18,6 +18,11 @@ class L1 : public Cache
 {
 private:
     array<L1Entry, 512> data = {};
+    array<L1Entry, 512> instr = {};
+
+    static constexpr uint32_t OFFSET_BITS = 6;
+    static constexpr uint32_t INDEX_BITS = 9; // 2 -> 11 index bits, 4 -> 10 index bits, 8 -> 9 index bits
+    static constexpr uint32_t TAG_BITS = 17;
 
     array<uint32_t, 16> readLine(uint32_t addr, bool isData);             // assume addr is 16B aligned
     void writeLine(uint32_t addr, array<uint32_t, 16> line, bool isData); // assume addr is 16B aligned
