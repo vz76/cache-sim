@@ -11,6 +11,7 @@ using namespace std;
 struct L2Entry // 4096 direct-mapped 64B entries in 256KB cache
 {
     bool valid;
+    bool dirty;
     uint32_t tag;
     array<uint32_t, 16> values;
 };
@@ -20,7 +21,9 @@ struct L2Set
     array<L2Entry, SET_ASSOCIATIVITY> entries;
 };
 
-class L2 : public Cache
+class DRAM;
+
+class L2
 {
 private:
     array<L2Set, 4096 / SET_ASSOCIATIVITY> data = {};
@@ -29,9 +32,10 @@ private:
     static constexpr uint32_t TAG_BITS = 32 - OFFSET_BITS - INDEX_BITS;
     std::mt19937 rd{SEED};
     std::uniform_int_distribution<uint32_t> dist{0, SET_ASSOCIATIVITY - 1}; // [start, end]
+    DRAM &dram;
 
 public:
-    virtual ~L2();
+    L2(DRAM &dramref) : dram(dramref){};
     array<uint32_t, 16> readLine(uint32_t addr);             // assume addr is 16B aligned
     void writeLine(uint32_t addr, array<uint32_t, 16> line); // assume addr is 16B aligned
 };

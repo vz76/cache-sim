@@ -1,4 +1,5 @@
 #include "l1.h"
+#include "l2.h"
 
 array<uint32_t, 16> L1::readLine(uint32_t addr, bool isData) // assume addr is 16B aligned
 {
@@ -15,13 +16,15 @@ array<uint32_t, 16> L1::readLine(uint32_t addr, bool isData) // assume addr is 1
     {
         // cache miss, fetch from L2 and update our cache
 
-        // if(cache[index].valid){
-        //     L2::writeLine((cache[index].tag << 15 | index << 6), line);
-        // }
+        if (cache[index].valid && cache[index].dirty)
+        {
+            l2.writeLine((cache[index].tag << 15 | index << 6), cache[index].values);
+        }
 
-        // array<uint32_t, 16> line = L2::readLine(addr);
+        array<uint32_t, 16> line = l2.readLine(addr);
         cache[index].valid = true;
-        // cache[index].values = line;
+        cache[index].dirty = false;
+        cache[index].values = line;
         cache[index].tag = tag;
 
         return cache[index].values;
@@ -36,6 +39,7 @@ void L1::writeLine(uint32_t addr, array<uint32_t, 16> line, bool isData) // assu
     if (cache[index].tag == tag)
     {
         // tag already in cache
+        cache[index].dirty = true;
         cache[index].valid = true;
         cache[index].values = line;
         cache[index].tag = tag;
@@ -44,12 +48,12 @@ void L1::writeLine(uint32_t addr, array<uint32_t, 16> line, bool isData) // assu
 uint32_t L1::readItem(uint32_t addr, bool isData)
 {
     uint32_t newaddr = (addr >> OFFSET_BITS) << OFFSET_BITS;
-    return readLine(newaddr, isData)[addr & (((uint32_t)1 << OFFSET_BITS) - 1)];
+    return readLine(newaddr, isData)[(addr >> ALIGN_BITS) & (((uint32_t)1 << (OFFSET_BITS - ALIGN_BITS)) - 1)];
 }
 void L1::writeItem(uint32_t addr, uint32_t val, bool isData)
 {
     uint32_t newaddr = (addr >> OFFSET_BITS) << OFFSET_BITS;
     array<uint32_t, 16> line = readLine(newaddr, isData);
-    line[addr & (((uint32_t)1 << OFFSET_BITS) - 1)] = val;
+    line[(addr >> ALIGN_BITS) & (((uint32_t)1 << (OFFSET_BITS - ALIGN_BITS)) - 1)] = val;
     writeLine(newaddr, line, isData);
 }

@@ -19,7 +19,7 @@ class Metrics
 
     constexpr static double L1_TIME = 5e-10;
     constexpr static double L2_TIME = 5e-9 - L1_TIME;
-    constexpr static double DRAM_TIME = 5e-8 - L2_TIME - L1_TIME;
+    constexpr static double DRAM_TIME = 5e-8 - L2_TIME;
 
     double totalJoules = 0.0;
 
