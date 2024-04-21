@@ -3,6 +3,8 @@
 
 #include <array>
 #include <cstdint>
+#include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -23,8 +25,9 @@ class Metrics
     constexpr static double WRITE_TIME = 5e-9; // writes are synchronous
 public:
     double totalJoules = 0.0;
-    double totalTime = 0.0;
+    double totalSeconds = 0.0;
     void step(int category, bool isWrite);
+    void resetMetrics();
 };
 
 #endif // METRICS_H
