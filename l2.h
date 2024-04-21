@@ -2,6 +2,7 @@
 #define L2_H
 
 #include "cache.h"
+#include "metrics.h"
 #include <unordered_map>
 #include <iostream>
 #include <random>
@@ -33,11 +34,14 @@ private:
     std::mt19937 rd{SEED};
     std::uniform_int_distribution<uint32_t> dist{0, SET_ASSOCIATIVITY - 1}; // [start, end]
     DRAM &dram;
+    Metrics &metrics;
 
 public:
-    L2(DRAM &dramref) : dram(dramref){};
-    array<uint32_t, 16> readLine(uint32_t addr);             // assume addr is 16B aligned
-    void writeLine(uint32_t addr, array<uint32_t, 16> line); // assume addr is 16B aligned
+    uint32_t instrFetches = 0, readFetches = 0, writeFetches = 0;
+    uint32_t instrMisses = 0, readMisses = 0, writeMisses = 0;
+    L2(DRAM &dramref, Metrics &metricsref) : dram(dramref), metrics(metricsref){};
+    array<uint32_t, 16> readLine(uint32_t addr, bool isData, bool isWrite); // assume addr is 16B aligned
+    void writeLine(uint32_t addr, array<uint32_t, 16> line);                // assume addr is 16B aligned
 };
 
 #endif // L2_H

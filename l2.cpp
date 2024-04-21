@@ -1,8 +1,25 @@
 #include "l2.h"
 #include "dram.h"
 
-array<uint32_t, 16> L2::readLine(uint32_t addr) // assume addr is 16B aligned
+array<uint32_t, 16> L2::readLine(uint32_t addr, bool isData, bool isWrite) // assume addr is 16B aligned
 {
+    metrics.step(2, false);
+    if (isData)
+    {
+        if (isWrite)
+        {
+            writeFetches++;
+        }
+        else
+        {
+            readFetches++;
+        }
+    }
+    else
+    {
+        instrFetches++;
+    }
+
     uint32_t index = addr >> OFFSET_BITS & (((uint32_t)1 << INDEX_BITS) - 1);
     uint32_t tag = addr >> (32 - TAG_BITS);
     L2Set &set = data[index];
@@ -18,6 +35,21 @@ array<uint32_t, 16> L2::readLine(uint32_t addr) // assume addr is 16B aligned
     }
 
     // cache miss, evict to memory, fetch from memory, and update our cache
+    if (isData)
+    {
+        if (isWrite)
+        {
+            writeMisses++;
+        }
+        else
+        {
+            readMisses++;
+        }
+    }
+    else
+    {
+        instrMisses++;
+    }
 
     // random evict to memory
     uint32_t evictIndex = dist(rd);
@@ -38,6 +70,7 @@ array<uint32_t, 16> L2::readLine(uint32_t addr) // assume addr is 16B aligned
 
 void L2::writeLine(uint32_t addr, array<uint32_t, 16> line) // assume addr is 16B aligned and entry is in cache
 {
+    metrics.step(2, true);
     uint32_t index = addr >> OFFSET_BITS & (((uint32_t)1 << INDEX_BITS) - 1);
     uint32_t tag = addr >> (32 - TAG_BITS);
 

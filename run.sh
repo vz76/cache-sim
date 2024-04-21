@@ -1,0 +1,1 @@
+./compile.sh && ./cache-sim

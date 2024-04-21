@@ -1,0 +1,23 @@
+----------------------------------------------------------------
+Total Instructions Executed: 2649493
+Reads (0): 1151182
+Writes (1): 670711
+Fetches (2): 827600
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 827600
+L1 Instruction Cache Misses: 12442
+----------------------------------------------------------------
+L1 Data Cache Fetches: 1821893
+L1 Data Cache Misses (Read): 11750
+L1 Data Cache Misses (Write): 14143
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 12442
+L2 Cache Fetches (Read): 11750
+L2 Cache Fetches (Write): 14143
+L2 Cache Misses (Instruction): 2953
+L2 Cache Misses (Read): 1499
+L2 Cache Misses (Write): 8356
+----------------------------------------------------------------
+Total Energy (J): 0.0232651
+Total Time (s): 0.00808075
+----------------------------------------------------------------

@@ -2,6 +2,7 @@
 #define L1_H
 
 #include "cache.h"
+#include "metrics.h"
 #include <unordered_map>
 #include <iostream>
 
@@ -23,17 +24,21 @@ private:
     array<L1Entry, 512> data = {};
     array<L1Entry, 512> instr = {};
     L2 &l2;
+    Metrics &metrics;
 
     static constexpr uint32_t ALIGN_BITS = 2;
     static constexpr uint32_t OFFSET_BITS = 6;
     static constexpr uint32_t INDEX_BITS = 9; // 2 -> 11 index bits, 4 -> 10 index bits, 8 -> 9 index bits
     static constexpr uint32_t TAG_BITS = 17;
 
-    array<uint32_t, 16> readLine(uint32_t addr, bool isData);             // assume addr is 16B aligned
-    void writeLine(uint32_t addr, array<uint32_t, 16> line, bool isData); // assume addr is 16B aligned
+    array<uint32_t, 16> readLine(uint32_t addr, bool isData, bool isWrite); // assume addr is 16B aligned
+    void writeLine(uint32_t addr, array<uint32_t, 16> line, bool isData);   // assume addr is 16B aligned
 
 public:
-    L1(L2 &l2ref) : l2(l2ref){};
+    uint32_t instrHits = 0, instrMisses = 0;
+    uint32_t dataMisses = 0;
+    uint32_t dataWriteMisses = 0, dataReadMisses = 0;
+    L1(L2 &l2ref, Metrics &metricsref) : l2(l2ref), metrics(metricsref){};
     uint32_t readItem(uint32_t addr, bool isData);
     void writeItem(uint32_t addr, uint32_t val, bool isData);
 };
