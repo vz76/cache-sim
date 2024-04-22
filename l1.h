@@ -28,7 +28,7 @@ private:
 
     static constexpr uint32_t ALIGN_BITS = 2;
     static constexpr uint32_t OFFSET_BITS = 6;
-    static constexpr uint32_t INDEX_BITS = 9; // 2 -> 11 index bits, 4 -> 10 index bits, 8 -> 9 index bits
+    static constexpr uint32_t INDEX_BITS = 9;
     static constexpr uint32_t TAG_BITS = 17;
 
     array<uint32_t, 16> readLine(uint32_t addr, bool isData, bool isWrite); // assume addr is 16B aligned

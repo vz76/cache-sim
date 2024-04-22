@@ -22,9 +22,12 @@ class Metrics
     constexpr static double L1_TIME = 5e-10;
     constexpr static double L2_TIME = 5e-9 - L1_TIME;
     constexpr static double DRAM_TIME = 5e-8 - L2_TIME;
-    constexpr static double WRITE_TIME = 5e-9; // writes are synchronous
+    constexpr static double WRITE_TIME = 5e-10; // writes are synchronous? NO - according to #127 / 150 (we don't do write through for l1/l2)
 public:
     double totalJoules = 0.0;
+    double L1Joules = 0.0;
+    double L2Joules = 0.0;
+    double DRAMJoules = 0.0;
     double totalSeconds = 0.0;
     void step(int category, bool isWrite);
     void resetMetrics();

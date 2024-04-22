@@ -1,0 +1,750 @@
+----------------------------------------------------------------
+Set Associativity 2, Run 1:
+Total Energy (J): 0.00153599
+Total Time (s): 0.000538161
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 172
+L2 Cache Misses (Write): 362
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 2:
+Total Energy (J): 0.00153574
+Total Time (s): 0.000538116
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 173
+L2 Cache Misses (Write): 360
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 3:
+Total Energy (J): 0.00153598
+Total Time (s): 0.000538161
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 175
+L2 Cache Misses (Write): 359
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 4:
+Total Energy (J): 0.00153574
+Total Time (s): 0.000538116
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 174
+L2 Cache Misses (Write): 359
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 5:
+Total Energy (J): 0.00153525
+Total Time (s): 0.000538025
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 175
+L2 Cache Misses (Write): 356
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 6:
+Total Energy (J): 0.00153598
+Total Time (s): 0.000538161
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 174
+L2 Cache Misses (Write): 360
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 7:
+Total Energy (J): 0.00153574
+Total Time (s): 0.000538116
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 175
+L2 Cache Misses (Write): 358
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 8:
+Total Energy (J): 0.00153525
+Total Time (s): 0.000538025
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 173
+L2 Cache Misses (Write): 358
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 9:
+Total Energy (J): 0.00153574
+Total Time (s): 0.000538116
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 174
+L2 Cache Misses (Write): 359
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 2, Run 10:
+Total Energy (J): 0.00153622
+Total Time (s): 0.000538207
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 172
+L2 Cache Misses (Write): 363
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 1:
+Total Energy (J): 0.00153523
+Total Time (s): 0.000538025
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 277
+L2 Cache Misses (Read): 171
+L2 Cache Misses (Write): 358
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 2:
+Total Energy (J): 0.00153524
+Total Time (s): 0.000538025
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 277
+L2 Cache Misses (Read): 170
+L2 Cache Misses (Write): 359
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 3:
+Total Energy (J): 0.00153451
+Total Time (s): 0.000537888
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 171
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 4:
+Total Energy (J): 0.00153403
+Total Time (s): 0.000537797
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 169
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 5:
+Total Energy (J): 0.00153403
+Total Time (s): 0.000537797
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 170
+L2 Cache Misses (Write): 356
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 6:
+Total Energy (J): 0.001535
+Total Time (s): 0.000537979
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 173
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 7:
+Total Energy (J): 0.00153426
+Total Time (s): 0.000537843
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 277
+L2 Cache Misses (Read): 170
+L2 Cache Misses (Write): 355
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 8:
+Total Energy (J): 0.00153548
+Total Time (s): 0.00053807
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 276
+L2 Cache Misses (Read): 172
+L2 Cache Misses (Write): 359
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 9:
+Total Energy (J): 0.00153451
+Total Time (s): 0.000537888
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 171
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 4, Run 10:
+Total Energy (J): 0.00153451
+Total Time (s): 0.000537888
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 277
+L2 Cache Misses (Read): 170
+L2 Cache Misses (Write): 356
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 1:
+Total Energy (J): 0.00153549
+Total Time (s): 0.00053807
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 277
+L2 Cache Misses (Read): 172
+L2 Cache Misses (Write): 358
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 2:
+Total Energy (J): 0.00153526
+Total Time (s): 0.000538025
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 276
+L2 Cache Misses (Read): 174
+L2 Cache Misses (Write): 356
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 3:
+Total Energy (J): 0.00153526
+Total Time (s): 0.000538025
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 277
+L2 Cache Misses (Read): 171
+L2 Cache Misses (Write): 358
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 4:
+Total Energy (J): 0.0015355
+Total Time (s): 0.00053807
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 176
+L2 Cache Misses (Write): 356
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 5:
+Total Energy (J): 0.00153502
+Total Time (s): 0.000537979
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 276
+L2 Cache Misses (Read): 173
+L2 Cache Misses (Write): 356
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 6:
+Total Energy (J): 0.0015355
+Total Time (s): 0.00053807
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 278
+L2 Cache Misses (Read): 172
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 7:
+Total Energy (J): 0.00153453
+Total Time (s): 0.000537888
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 276
+L2 Cache Misses (Read): 170
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 8:
+Total Energy (J): 0.00153477
+Total Time (s): 0.000537934
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 275
+L2 Cache Misses (Read): 172
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 9:
+Total Energy (J): 0.00153524
+Total Time (s): 0.000538025
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 279
+L2 Cache Misses (Read): 170
+L2 Cache Misses (Write): 357
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Set Associativity 8, Run 10:
+Total Energy (J): 0.00153502
+Total Time (s): 0.000537979
+----------------------------------------------------------------
+Total Instructions Executed: 1000000
+Reads (0): 130497
+Writes (1): 60135
+Fetches (2): 809368
+----------------------------------------------------------------
+L1 Instruction Cache Fetches: 809368
+L1 Instruction Cache Misses: 1701
+----------------------------------------------------------------
+L1 Data Cache Fetches: 190632
+L1 Data Cache Misses (Read): 544
+L1 Data Cache Misses (Write): 458
+----------------------------------------------------------------
+L2 Cache Fetches (Instruction): 1701
+L2 Cache Fetches (Read): 544
+L2 Cache Fetches (Write): 458
+L2 Cache Misses (Instruction): 278
+L2 Cache Misses (Read): 171
+L2 Cache Misses (Write): 356
+----------------------------------------------------------------
+

@@ -36,7 +36,7 @@ array<uint32_t, 16> L1::readLine(uint32_t addr, bool isData, bool isWrite) // as
 
         if (cache[index].valid && cache[index].dirty)
         {
-            l2.writeLine((cache[index].tag << 15 | index << 6), cache[index].values);
+            l2.writeLine((cache[index].tag << (OFFSET_BITS + INDEX_BITS) | index << 6), cache[index].values);
         }
 
         array<uint32_t, 16> line = l2.readLine(addr, isData, isWrite);
@@ -50,7 +50,6 @@ array<uint32_t, 16> L1::readLine(uint32_t addr, bool isData, bool isWrite) // as
 }
 void L1::writeLine(uint32_t addr, array<uint32_t, 16> line, bool isData) // assume addr is 16B aligned and entry is in cache
 {
-    metrics.step(1, true);
 
     uint32_t index = addr >> OFFSET_BITS & (((uint32_t)1 << INDEX_BITS) - 1); // get the middle 9 bits
     uint32_t tag = addr >> (32 - TAG_BITS);                                   // get the first 17 bits
