@@ -21,3 +21,8 @@ void DRAM::write(uint32_t addr, array<uint32_t, 16> val)
 
     memory[addr] = val;
 }
+
+void DRAM::clearMemory()
+{
+    memory.clear();
+}

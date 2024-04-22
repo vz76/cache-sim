@@ -6,28 +6,28 @@ using namespace std;
 
 void Metrics::step(int category, bool isWrite)
 {
-    if (isWrite)
+    if (isWrite) // since we do writeback eviction for both L1 and L2, all writes are async
     {
-        if (category == 0) // DRAM
-        {
-            totalJoules += DRAM_PENALTY_JOULES;
-            totalJoules += DRAM_ACTIVE_WATTS * WRITE_TIME;
-            totalJoules += TOTAL_IDLE_WATTS * WRITE_TIME;
-            totalSeconds += WRITE_TIME;
-        }
-        else if (category == 1) // L1
-        {
-            totalJoules += L1_ACTIVE_WATTS * WRITE_TIME;
-            totalJoules += TOTAL_IDLE_WATTS * WRITE_TIME;
-            totalSeconds += WRITE_TIME;
-        }
-        else if (category == 2) // L2
-        {
-            totalJoules += L2_PENALTY_JOULES;
-            totalJoules += L2_ACTIVE_WATTS * WRITE_TIME;
-            totalJoules += TOTAL_IDLE_WATTS * WRITE_TIME;
-            totalSeconds += WRITE_TIME;
-        }
+        // if (category == 0) // DRAM
+        // {
+        //     totalJoules += DRAM_PENALTY_JOULES;
+        //     totalJoules += DRAM_ACTIVE_WATTS * WRITE_TIME;
+        //     totalJoules += TOTAL_IDLE_WATTS * WRITE_TIME;
+        //     totalSeconds += WRITE_TIME;
+        // }
+        // else if (category == 1) // L1
+        // {
+        //     totalJoules += L1_ACTIVE_WATTS * WRITE_TIME;
+        //     totalJoules += TOTAL_IDLE_WATTS * WRITE_TIME;
+        //     totalSeconds += WRITE_TIME;
+        // }
+        // else if (category == 2) // L2
+        // {
+        //     totalJoules += L2_PENALTY_JOULES;
+        //     totalJoules += L2_ACTIVE_WATTS * WRITE_TIME;
+        //     totalJoules += TOTAL_IDLE_WATTS * WRITE_TIME;
+        //     totalSeconds += WRITE_TIME;
+        // }
     }
     else
     {

@@ -77,3 +77,10 @@ void L1::writeItem(uint32_t addr, uint32_t val, bool isData)
     line[(addr >> ALIGN_BITS) & (((uint32_t)1 << (OFFSET_BITS - ALIGN_BITS)) - 1)] = val;
     writeLine(newaddr, line, isData);
 }
+
+void L1::flushCache()
+{
+    data = {};
+    instr = {};
+    l2.flushCache();
+}

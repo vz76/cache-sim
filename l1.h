@@ -16,14 +16,14 @@ struct L1Entry // 512 entries in 32KB cache
     array<uint32_t, 16> values;
 };
 
-class L2;
+class L2Interface;
 
 class L1
 {
 private:
     array<L1Entry, 512> data = {};
     array<L1Entry, 512> instr = {};
-    L2 &l2;
+    L2Interface &l2;
     Metrics &metrics;
 
     static constexpr uint32_t ALIGN_BITS = 2;
@@ -38,9 +38,10 @@ public:
     uint32_t instrHits = 0, instrMisses = 0;
     uint32_t dataMisses = 0;
     uint32_t dataWriteMisses = 0, dataReadMisses = 0;
-    L1(L2 &l2ref, Metrics &metricsref) : l2(l2ref), metrics(metricsref){};
+    L1(L2Interface &l2ref, Metrics &metricsref) : l2(l2ref), metrics(metricsref){};
     uint32_t readItem(uint32_t addr, bool isData);
     void writeItem(uint32_t addr, uint32_t val, bool isData);
+    void flushCache();
 };
 
 #endif // L1_H
