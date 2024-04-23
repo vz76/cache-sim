@@ -126,6 +126,11 @@ void runSimulation(string filePath, ofstream &outputFile, ofstream &outputLog, M
         logput << "L2 Cache Misses (Read): " << (l2.readMisses) << endl;
         logput << "L2 Cache Misses (Write): " << (l2.writeMisses) << endl;
         logput << "----------------------------------------------------------------" << endl;
+
+        logput << "DRAM Fetches: " << (dram.readAccesses + dram.writeAccesses) << endl;
+        logput << "DRAM Fetches (Read): " << (dram.readAccesses) << endl;
+        logput << "DRAM Fetches (Write): " << (dram.writeAccesses) << endl;
+        logput << "----------------------------------------------------------------" << endl;
         logput << endl;
 
         read = 0;
@@ -140,6 +145,7 @@ void runSimulation(string filePath, ofstream &outputFile, ofstream &outputLog, M
         l2.instrMisses = 0;
         l2.readMisses = 0;
         l2.writeMisses = 0;
+        dram.accesses = 0;
 
         l1.flushCache();
         totalJoules.push_back(metrics.totalJoules);

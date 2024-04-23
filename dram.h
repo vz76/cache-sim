@@ -17,6 +17,7 @@ private:
     Metrics &metrics;
 
 public:
+    uint32_t readAccesses = 0, writeAccesses = 0;
     DRAM(Metrics &metricsref) : metrics(metricsref){};
     void write(uint32_t addr, array<uint32_t, 16> val);
     array<uint32_t, 16> read(uint32_t addr);
